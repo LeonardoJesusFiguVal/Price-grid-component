@@ -1,0 +1,112 @@
+:root{
+    --primaryCyan: hsl(179, 62%, 43%);
+    --secundaryCyan: hsl(179, 62%, 53%);
+    --primaryYellow: hsl(71, 73%, 54%);
+    --neutralLightGray: hsl(204, 43%, 93%);
+    --neutralGray: hsl(218, 22%, 67%);
+    --white: hsl(0, 100%, 100%);
+}
+
+html{
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: var(--neutralLightGray);
+}
+
+.shadowBox{
+    box-shadow: 1.5rem 8rem none;
+    margin: 1rem 1.5rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    background-color: var(--primaryCyan);
+}
+
+
+.button{
+    text-decoration: none;
+    background-color: var(--primaryYellow);
+    color: var(--white);
+    padding: .8rem 2.5rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+/*Introduction*/
+.shadowBox-introduction{
+    color: var(--neutralGray);
+    background-color: var(--white);
+}
+
+.shadowBox-introduction h1{
+    color: var(--primaryCyan);
+    font-weight: 700;
+}
+
+.shadowBox-introduction h2{
+    color: var(--primaryYellow);
+}
+
+.container{
+    margin: 1rem 2rem;
+}
+
+.container:first-child{
+    margin-top: 2rem;
+}
+
+
+/*Paiment Method*/
+
+.shadowBox-paiment{
+    background-color: var(--primaryCyan);
+    color: var(--white);
+}
+
+.shadowBox-paiment h2{
+    font-weight: 700;
+}
+
+.shadowBox-paiment h3 span{
+    font-size: .7rem;
+}
+
+/*About*/
+.shadowBox-about{
+    background-color: var(--secundaryCyan);
+    color: var(--white);
+}
+
+.shadowBox-about a{
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+@media (min-width: 376px){
+    .shadowBox{
+        background-color: var(--white);
+        margin: auto 5rem;
+    }
+    .orderShadowboxs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+
+    }
+}
